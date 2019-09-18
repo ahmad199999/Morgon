@@ -23,11 +23,15 @@ else:
 season = False
 while season == False:
     season =input("vilken årstid är det?[vår, vinter, sommar, höst]")
-    if season == "vår" or season == "vinter" or season == "höst":
+    if season == "vår" or season == "vinter" or season == "höst": # if och elif eller else ska var på samma rad
+        # annurs funkar inte de.
         print("Det är kallt och slask, fy tusen!")
         print("Du klär på dig vinterpälsen...")
     elif season == "sommar":
-        print("Sommar!shorts och flip flops")
+        print("Sommar! shorts och flip flops")
     else:
-        season = False
-
+        season = False 
+if season == "vår" or season == "vinter" or season == "höst":
+    print("Du ska ta bussen!")
+elif season == "sommar":
+    print("Du ska cykla!")    
